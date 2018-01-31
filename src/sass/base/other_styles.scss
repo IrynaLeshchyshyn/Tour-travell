@@ -1,0 +1,80 @@
+//arrow-top
+a#move_up {
+  position: fixed;
+  bottom: 260px;
+  width: 50px;
+	height: 50px;
+	border: 5px;
+  display: none;
+  text-align: center;
+  font: 12px Verdana;
+  text-decoration: none;
+  left: -6px;
+  size: 11px;
+  background: #5d9b9a;
+	display: none;
+  padding-top: 15px;
+}
+//social
+.social-media {
+	width: max-content;
+	margin-left: 14px;
+  background: #5d9b9a;
+  margin: 20px auto;
+  padding-top: 10px;}
+
+
+
+.social-sprite {
+	display: inline-block;
+	width: 37px;
+  height: 36px;
+	background: url("../images/icons/social-sprite.png")no-repeat;
+	margin-top: 4px;
+	border-radius: 50%;
+	margin-right: 2px;
+}
+
+a:nth-of-type(2) .social-sprite {
+	background-position: -43px 0;
+}
+
+a:nth-of-type(3) .social-sprite {
+	background-position: -87px 0;
+}
+
+a:nth-of-type(4) .social-sprite {
+	background-position: -130px 0;
+}
+
+a:nth-of-type(5) .social-sprite {
+	background-position: -172px 0;
+}
+
+a:nth-of-type(6) .social-sprite {
+	background-position: -216px 0;
+}
+
+a:first-of-type .social-sprite:hover {
+	background-position: 0px -44px;
+}
+
+a:nth-of-type(2) .social-sprite:hover {
+	background-position: -43px -44px;
+}
+
+a:nth-of-type(3) .social-sprite:hover {
+	background-position: -87px -44px;
+}
+
+a:nth-of-type(4) .social-sprite:hover {
+	background-position: -130px -44px;
+}
+
+a:nth-of-type(5) .social-sprite:hover {
+	background-position: -172px -44px;
+}
+
+a:nth-of-type(6) .social-sprite:hover {
+	background-position: -216px -44px;
+}

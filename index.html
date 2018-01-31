@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tour-trav</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="src/sass/vendor/normalize.min.css">
+    <link rel="stylesheet" href="src/sass/vendor/defaults.min.css">
+    <link rel="stylesheet" href="src/sass/vendor/nav-core.min.css">
+    <link rel="stylesheet" href="src/sass/vendor/nav-layout.min.css">
+    <link rel="stylesheet" href="src/sass/vendor/bootstrapValidator.css"/>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/flatlogic/bootstrap-tabcollapse/master/bootstrap-tabcollapse.js"></script>
+  </head>
+  <body id="homes">
+    <header class="sticky-header">
+      <div  class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
+            <button class="button-login"  data-toggle="modal" data-target="#myModal">login
+            </button>
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-9 col-xs-1">
+            <div class="nav-button" >
+              <div id="nav-icon2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+            <nav class="nav">
+              <ul>
+                <li><a href="#homes">Главная</a></li>
+                <li class="nav-submenu"><a href="#excursion">Экскурсии по Киеву</a>
+                  <ul>
+                    <li><a href="#">Для детей</a></li>
+                    <li><a href="#">По музеям</a></li>
+                    <li><a href="#">По достопримечательностям</a></li>
+                    <li><a href="#">Пешие прогулки</a></li>
+                  </ul>
+                </li>
+                <li class="nav-submenu"><a href="#tour-ukraine">Туры по Украине</a>
+                  <ul>
+                    <li><a href="#">Восточная Украина</a></li>
+                    <li class="nav-submenu"><a href="#">Центральная Украина</a>
+                      <ul>
+                        <li><a href="#">Среднее Поднепровье</a></li>
+                        <li><a href="#">Подолье</a></li>
+                        <li><a href="#">Сиверщина</a></li>
+                        <li><a href="#">Полтавщина</a></li>
+                        <li><a href="#">Запорожский край</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-submenu"><a href="#">Западная Украина</a>
+                      <ul>
+                        <li><a href="#">Волынь</a></li>
+
+                        <li><a href="#">Закарпатье</a></li>
+                        <li><a href="#">Буковина</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Южная Украина</a></li>
+                  </ul>
+                </li>
+                <li class="nav-submenu"><a href="#active-tour">Активный туризм</a>
+                  <ul>
+                    <li><a href="#">Горный</a></li>
+                    <li><a href="#">Пеший</a></li>
+                    <li><a href="#">На катерах</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="carousel-container">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+           </ol>
+           <div class="carousel-inner">
+             <div class="item active">
+               <img src="public/images/content/city/odesa_sale.jpg" alt="Chania">
+               <div class="carousel-caption">
+                 <h3 class="title-carousel"></h3>
+               </div>
+             </div>
+             <div class="item">
+               <img src="public/images/content/city/lviv_top_carousel.jpg" alt="Chicago">
+               <div class="carousel-caption">
+                 <h3 class="title-carousel"></h3>
+               </div>
+             </div>
+             <div class="item">
+               <img src="public/images/content/city/iv-fran_top_carousel.jpg" alt="New York">
+               <div class="carousel-caption">
+                 <h3 class="title-carousel"></h3>
+               </div>
+             </div>
+             <div class="item">
+               <img src="public/images/content/city/goverla_top_carousel.jpg" alt="New York">
+               <div class="carousel-caption">
+                 <h3 class="title-carousel"></h3>
+               </div>
+             </div>
+           </div>
+           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+             <img src="public/images/icons/arrow-left.png" alt="">
+           </a>
+           <a class="right carousel-control" href="#myCarousel" data-slide="next">
+             <img src="public/images/icons/arrow-right.png" alt="">
+           </a>
+         </div>
+       </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="capabilities" class="presentation-container">
+              <div class="presentation">
+                <hgroup>
+                <h2>Отдыхать - полезно!</h2>
+                  <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+                      <h3>Особенность нашей компании - гибкость тура и экскурсий для нашего клиента. По вашему желанию мы добавляем места, которые вы хотите посетить.</h3>
+                      <h3>Мы создаем туры, чтобы они были именно для Вас.</h3>
+                    </div>
+                  </div>
+                </hgroup>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <div class="tabs">
+              <ul id="myTab" class="nav-tabs" role="tablist">
+                <li class="active">
+                  <a  data-toggle="tab" href="#home" role="tab">Семейные</a>
+                </li>
+                <li >
+                  <a  data-toggle="tab" href="#profile" role="tab">Одному</a>
+                </li>
+                <li>
+                  <a  data-toggle="tab" href="#messages" role="tab">Для двоих</a>
+                </li>
+                <li >
+                  <a  data-toggle="tab" href="#settings" role="tab">Груповые</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active taba" id="home" role="tabpanel">
+                    <div class="col-lg-2  col-md-2 col-sm-2 hidden-xs">
+                      <div class="taba__icon">
+                        <img src="public/images/icons/family.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                      <div class="taba__description">
+                        <h4 class="taba__title">Отдых для семьи - сближает</h4>
+                        <p class="textMainContent">Семыйные туры построены по принципу, чтобы было интересно и детям и родителям. Мы учитываем Ваши пожелания и можем скорректировать программу тура и способ передвижения, в зависимости от возраста детей,чтобы экскурсия была радостна всем.</hp></div>
+                    </div>
+                </div>
+                <div class="tab-pane taba" id="profile" role="tabpanel">
+                    <div class="col-lg-2  col-md-2 col-sm-2 hidden-xs">
+                      <div class="taba__icon">
+                        <img src="public/images/icons/one-person-travell.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                      <div class="taba__description">
+                        <h4 class="taba__title">Персональная экскурсия</h4>
+                        <p class="textMainContent">Индивидуальные туры - замечательная возможность одному попутешествовать. Индивидуальные туры помимо основной программы могут дополняться достопримечательномся по Вашему усмотрению. Есть выбор - с сопровождением экскурсовода или же без. Программа индвидуальных экскурсий очень гибкая - мы уважаем наших клиентов и делаем все для них.</p></div>
+                    </div>
+                </div>
+                <div class="tab-pane taba" id="messages" role="tabpanel">
+                    <div class="col-lg-2  col-md-2 col-sm-2 hidden-xs">
+                      <div class="taba__icon">
+                        <img src="public/images/icons/romantic.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                      <div class="taba__description">
+                        <h4 class="taba__title">Отдых для двоих - как романтично!</h4>
+                        <p class="taba__text">Испытать новые чувства, побыть вдвоем, вместе увидеть исторические места и их величие. Общие эмоции для пары! У нас есть большой выбор туров для двоих. В туры могут добавляться рестораны по вашему усмотрению и места отдыха</p></div>
+                    </div>
+                </div>
+                <div class="tab-pane taba" id="settings" role="tabpanel">
+
+                    <div class="col-lg-2  col-md-2 col-sm-2 hidden-xs">
+                      <div class="taba__icon">
+                        <img src="public/images/icons/travell-group.svg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10">
+                      <div class="taba__description">
+                        <h4 class="taba__title">Групповые экскурсии: новые места и новые знакомства!</h4>
+                        <p class="taba__text">Количество людей в группе до 10. Если вам не хочется ехать одному, если вы хотите путешествовать с друзьями или у вас нету компании - груповые туры для вас. Они значительно дешевле по цене, но менее гибки по программе. Возможно добавление нескольких мест, если компания большая. Частые скидочные предложения</p></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <h3>Наши постоянные туры</h3>
+            <p class="textMainContent">В групповые экскурсии входят посещение основных достопримечательностей, пешая и автобусная обзорная экскурсия, свободное время, трансфер и проживание</p>
+          </div>
+          <div class="col-lg-12 col-xs-12">
+            <div id="standart-travell">
+              <div class="card">
+                <figure>
+                  <img class="card__foto" src="public/images/content/kamenets.jpg">
+                  <ul class="card__info">
+                    <li class="card__calendar">05.09.2017</li>
+                    <li class="data__price">500 грн</li>
+                  </ul>
+                  <figcaption>
+                    <h4>Каменец-Подольский</h4>
+                    <p class="textMainContent">Старый город - Старая крепость - Хотинская крепость - Костел святых апостолов Петра и Павла</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="card">
+                <figure>
+                  <img class="card__foto" src="public/images/content/pereyaslav.jpg">
+                  <ul class="card__info">
+                    <li class="card__calendar">06.09.2017</li>
+                    <li class="data__price">400 грн</li>
+                  </ul>
+                  <figcaption>
+                    <h4>Переяслав-Хмельницкий</h4>
+                    <p class="textMainContent">Музей народной архитектуры - Михайловская церковь - Свято-Троицкая церковь, Вознесенский собор</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="card">
+                <figure>
+                  <img class="card__foto" src="public/images/content/ternopol.jpg">
+                  <ul class="card__info">
+                    <li class="card__calendar">07.09.2017</li>
+                    <li class="data__price">700 грн</li>
+                  </ul>
+                  <figcaption>
+                    <h4>Тернополь</h4>
+                    <p class="textMainContent">Тернополь - Доминиканский костел - Тернопольский замок - Збаражский замок - Микулинский замок и Дворец Потоцких</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="card">
+                <figure>
+                  <img class="card__foto" src="public/images/content/lutsk.jpg">
+                  <ul class="card__info">
+                    <li class="card__calendar">09.09.2017</li>
+                    <li class="data__price">400 грн</li>
+                  </ul>
+                  <figcaption>
+                    <h4>Луцк</h4>
+                    <p class="textMainContent">Замок Любарта - костел Св. Петра и Павла (1616-1640) - Лютеранская кирха (1905-1907) - Музей волынской иконы</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xs-12">
+            <div id="galery-ajax-row"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div id="load" >
+              <button class="button">
+                <span>Показать все туры</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-3  col-sm-3  col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+            <div id="more-travell">
+              <button class="button ">
+                <span>Детали тура</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--  </div>-->
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-xs-12">
+            <div class="featured-container">
+              <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+                  <h3>Акции на групповой тур выходного дня</h3>
+                  <p class="textMainContent">В групповые экскурсии входят посещение основных достопримечательностей, пешая и автобусная обзорная экскурсия, свободное время, трансфер и проживание</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="project">
+                    <div class="project__image">
+                      <img src="public/images/content/city/lviv_sale.jpg" alt="">
+                      <div class="project__price">600 грн</div>
+                    </div>
+                    <div class="project__content">
+                      <h4>Львов.</h4>
+                      <p class="project__descripton textMainContent box box--responsive">Высокий Замок, Львовская опера, Площадь рынок, Городская ратуша и другие достопримечательности - Вы должны их увидеть. Архитектура древнего города в обзорной групповой экскурсии. Количество мест 10. </p>
+                      <div class="project__progress">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                            <span class="sr-only">90% занято</span>
+                          </div>
+                        </div>
+                        <span class="project__persents">Осталось 1 место</span>
+                        <span class="project__days-left">01.09.2017</span>
+                      </div>
+                      <button class="btn button pulse wow" data-toggle="modal" data-target="#myModal">Детали тура</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 hidden-xs">
+                  <div class="project">
+                    <div class="project__image">
+                      <img src="public/images/content/city/odesa_top_carousel.jpg" alt="">
+                      <div class="project__price">500 грн</div>
+                    </div>
+                    <div class="project__content">
+                      <h4>Одесса</h4>
+                      <p class="project__descripton textMainContent box box--responsive">В экскурсии вы окунетесь в колоритную атмосферу Одессы. Прогулка по Дерибасовской, Оперный театр, памятник Дюку - далеко не все что предлагает город. Посещение пляжа в личное время или прогулки по паркам. Присоединяйтесь. Количество мест 10.</p>
+                      <div class="project__progress">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <span class="sr-only">10% занято</span>
+                          </div>
+                        </div>
+                        <span class="project__persents">Осталось 5 мест</span>
+                        <span class="project__days-left">02.09.2017</span>
+                      </div>
+                      <button class="btn button pulse wow" data-toggle="modal" data-target="#myModal"> Детали тура </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 hidden-xs">
+                  <div class="project">
+                    <div class="project__image">
+                      <img src="public/images/content/city/iv-fra-sell.jpg" alt="">
+                      <div class="project__price">500 грн</div>
+                    </div>
+                    <div class="project__content">
+                      <h4>Ивано-Франковск</h4>
+                      <p class="project__descripton textMainContent box box--responsive">Городская ратуша, Армянский собор, Кафедральный собор Воскресенья, сквер Мицкевича, Костел Девы Марии - программа тура очень богата. И конечно же личное время на наслаждение городом. Количество мест 10</p>
+                      <div class="project__progress">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <span class="sr-only">10% занято</span>
+                          </div>
+                        </div>
+                        <span class="project__persents">Осталось 2 места</span>
+                        <span class="project__days-left">03.09.2017</span>
+                      </div>
+                      <button class="btn button pulse wow" data-toggle="modal" data-target="#myModal"> Детали тура </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="hidden-lg hidden-md hidden-sm col-xs-8 col-xs-offset-2">
+                  <div id="sale-button">
+                    <button class="button">
+                      <span>Смотреть еще</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sale-person">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <h3>Активный отдых. Групповые туры на 2-3 дня</h3>
+            <p class="textMainContent">Сплав на байдарках, скалолазание, восхождение на гору, спелеотуры - мы предлагаем большой выбор активного отдыха. Группы от 5 человек</p>
+            <div class="carousel slide" id="myCarousels">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/turunchuk.jpg" alt="turunchuk"></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Сплав на байдарках по Турунчук</h4>
+                        <p>28.10.2017 - 30.10.2017</p>
+                        <p>1250 грн</p>
+                        <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/bug.jpg" alt="bug"></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Рафтинг по Южному Бугу</h4>
+                        <p>28.10.2017 - 30.10.2017 </p>
+                        <p>1400 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/bukovel.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Горные лыжи в Буковеле.</h4>
+                        <p>04.11.2017 - 06.11.2017</p>
+                        <p>1200 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#">
+                          <img class="img-responsive" src="public/images/content/active_travell/gamba.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                         <h4>Альпинизм на Гембе</h4>
+                        <p>11.11.2017 - 13.11.2017</p>
+                        <p>2400 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/borgava.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Поход по Боржаве</h4>
+                        <p>11.11.2017 - 13.11.2017</p>
+                        <p>1000 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#">
+                          <img class="img-responsive" src="public/images/content/active_travell/deneshy.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Скалолазание в Денишах</h4>
+                        <p>11.11.2017 - 13.11.2017</p>
+                        <p>1000 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/buki.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Каньйон Буки. Скалолазание</h4>
+                        <p>28.10.2017 - 30.10.2017</p>
+                        <p>1500 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/psiol.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Сплав по реке Псёл на байдарках  </h4>
+                        <p>28.10.2017 - 30.10.2017</p>
+                        <p>1400 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/poltava-koni.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Конный поход по Полтавщике</h4>
+                        <p>05.05.2018 - 07.05.2018 </p>
+                        <p>1800 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/speleo.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Спелеотур “Гипсовые пещеры Подолья”</h4>
+                        <p>28.10.2017 - 30.10.2017</p>
+                        <p>1200 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/cheremosh.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                           <h4>Сплав по Черемошу</h4>
+                          <p>01.04.2018- 03.04.2018</p>
+                          <p>1500 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="active-slide">
+                      <div class="thumbnail">
+                        <a href="#"><img class="img-responsive" src="public/images/content/active_travell/synevir.jpg" alt=""></a>
+                      </div>
+                      <div class="caption">
+                        <h4>Велопоход к озеру Синевир</h4>
+                        <p>01.04.2018- 03.04.2018</p>
+                        <p>1300 грн</p> <a class="btn btn-default btn-xs" href="#">О туре</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a data-slide="prev" href="#myCarousels" id="left" class="carousel-control">
+                  <img src="public/images/icons/arrow-left.png" alt="">
+                </a>
+                <a data-slide="next" href="#myCarousels" id="right" class="carousel-control ">
+                  <img src="public/images/icons/arrow-right.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <h3>Свяжитесь с нами в любое время!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+              <form class="well zoomInDown wow form-horizontal" action=" " method="post"  id="contact_form">
+                <fieldset>
+                  <h5 class="contacts__title">Напишите нам</h5>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-3 control-label">Имя</label>
+                    <div class="col-md-10 col-sm-9 inputGroupContainer">
+                    <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input  name="first_name" placeholder="Ваше Имя" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-3 control-label">Фамилия</label>
+                      <div class="col-md-10 col-sm-9 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Ваша фамилия" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-3 control-label">E-Mail</label>
+                      <div class="col-md-10 col-sm-9 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input name="email" placeholder="E-Mail" class="form-control"  type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-3 control-label">Телефон</label>
+                      <div class="col-md-10 col-sm-9 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input name="phone" placeholder="(044)555-1212" class="form-control" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-3 control-label" for="message">Сообщение</label>
+                      <div class="col-md-10  col-sm-9 inputGroupContainer">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                          	<textarea class="form-control" rows="5" name="message" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-2 col-sm-2 col-xs-2 control-label"></label>
+                    <div class="col-md-6 col-sm-10 col-xs-8">
+                      <div id="send-button">
+                      <button type="submit" class="btn btn-warning button">Отправить <span class="glyphicon glyphicon-send"></span></button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+          </div>
+          <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
+            <div class="col-md-12 col-sm-12">
+              <h5 class="contacts__title zoomInDown wow">Наши контакты:</h5>
+            </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="contacts__cell zoomInDown wow"><span>+38(097)545 38 92</span><p>Телефон</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="contacts__cell zoomInDown wow"><span>tour_trav_ukraine@gmail.com</span><p>E-mail</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="contacts__cell zoomInDown wow">
+                  <span>г.Киев, ул. Попудренко 79, офис 3</span><p>Адресс</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12">
+                <div class="contacts__cell zoomInDown wow">
+                  <div class="social-media">
+        							<a href="#"><div class="social-sprite"></div></a>
+        							<a href="#"><div class="social-sprite"></div></a>
+        							<a href="#"><div class="social-sprite"></div></a>
+        							<a href="#"><div class="social-sprite"></div></a>
+        							<a href="#"><div class="social-sprite"></div></a>
+        							<a href="#"><div class="social-sprite"></div></a>
+        						</div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h5>Подпишитесь на наши рассылки и узнавайте первыми о специальных предложениях и акциях!</h5></div>
+          </div>
+          <form  method="post" class="form-inline">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                <div class="form-group">
+                  <input id="name" name="name" placeholder="Введите ваше имя" class="form-control" caption="Enter name" type="text">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                <div class="form-group">
+                  <input id="email" name="email" placeholder="Введите ваш e-mail" class="form-control" caption="Enter e-mail" type="email">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <div id="form-button">
+                <button  class="formButton button" type="submit">Подписаться!</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a id="move_up" href="#" style=""><img src="public/images/icons/arrow-top.png" border="0"></a>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="rollIn wow logo-partner-container">
+              <div class="your-class">
+                <div><img src="public/images/content/akkord_logo_ru.png" alt=""></div>
+                <div><img src="public/images/content/butour-sponsor.svg" alt=""></div>
+                <div><img src="public/images/content/logo_kandagar.png" alt=""></div>
+                <div><img src="public/images/content/logo-pan-ukraine.png" alt=""></div>
+                <div><img src="public/images/content/logo-tui.svg" alt="ford"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 col-sm-offset-1 control-label">Email</label>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 col-sm-offset-1 control-label">Пароль</label>
+                <div class="col-sm-6">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">Запомнить меня
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-default">Вход</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="public/js/mainscript.js"></script>
+  </body>
+</html>

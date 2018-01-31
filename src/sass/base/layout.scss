@@ -1,0 +1,46 @@
+
+.featured-container{
+	padding-top: 6%;
+
+	.project__content h3{
+		padding-bottom: 0;
+	}
+	 p{
+		 margin-bottom: 20px;
+	 }
+}
+
+.tabs{
+	padding-top: 10%;
+	padding-bottom: 2%;
+}
+
+.comunity-container{
+	background:url(../../src/image/growing_community_bkg.png) 0 0 no-repeat;
+	background-size:cover;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.logo-partner-container{
+	height:146px;
+	padding:20px 0;
+}
+
+.copyright{
+	text-align:center;
+}
+
+@media  screen and (max-width:1200px){
+  .carousel-container,
+  .presentation-container,
+  .featured-container {
+  	height: auto;
+  }
+}
+
+@media  screen and (max-width:768px){
+  .featured-container {
+  	text-align:center;
+  }
+}

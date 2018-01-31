@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Чернигов",
+    "paragraph": "Спасский собор - Борисоглебский собор - Черниговский коллегиум - Черниговский исторический музей - Екатериненская церковь",
+    "image": "public/images/content/chernigov.jpg",
+    "calendar": "05.09.2017",
+    "price": "500 грн"
+  },
+  {
+    "title": "Чигирин",
+    "paragraph": "Чигирин - Суботов - Мельники -Холодный яр - Буда",
+    "image": "public/images/content/chigiryn.jpg",
+    "calendar": "10.09.2017",
+    "price": "600 грн"
+  },
+  {
+    "title": "Батурин",
+    "paragraph": "Козелец - Батурин",
+    "image": "public/images/content/baturyn.jpg",
+    "calendar": "15.09.2017",
+    "price": "400 грн"
+
+  },
+  {
+    "title": "Умань. Софиевка",
+    "paragraph": "Софиевка - Легедзино",
+    "image": "public/images/content/sofievka.jpg",
+    "calendar": "25.09.2017",
+    "price": "500 грн"
+
+  },
+  {
+    "title": "Львов. Замки",
+    "paragraph": "Свирж замок - Золочев замок - Подгорцы дверец - Олесько замок",
+    "image": "public/images/content/sofievka.jpg",
+    "calendar": "25.09.2017",
+    "price": "500 грн"
+  },
+  {
+    "title": "Каменец. Хотин",
+    "paragraph": "Хотин - Самчики - Старый город - Кристалическая пещера",
+    "image": "public/images/content/Khotin.jpg",
+    "calendar": "27.09.2017",
+    "price": "900 грн"
+  },
+  {
+    "title": "Бердычев",
+    "paragraph": "Коростышев костел святой Марии - Монастырь Босых кармелитов - костел святой Варвары",
+    "image": "public/images/content/berdychev.jpg",
+    "calendar": "27.09.2017",
+    "price": "9000 грн"
+  },
+  {
+    "title": "Полтавщина. Гадяч",
+    "paragraph": "Гадяч - Зеленый гай - Бобрик - Плишивец - Сары",
+    "image": "public/images/content/poltava.jpg",
+    "calendar": "30.09.2017",
+    "price": "600 грн"
+  }
+
+]

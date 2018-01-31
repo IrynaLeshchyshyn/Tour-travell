@@ -1,0 +1,58 @@
+.galery{
+  width: 100%;
+}
+
+.card {
+	flex-basis:190px;
+	background:white;
+	flex-grow:1;
+	margin: 0;
+	padding:15px;
+	flex-basis: 230px;
+	margin: 1px 1px;
+	border: 1px solid #375a56;
+
+	@media only screen and (min-width:992px) and (max-width:1200px){
+		flex-basis: 236px;
+	  max-width: 300px;
+		max-width: 233px;
+	}
+
+	@media only screen and (min-width:480px) and (max-width:992px){
+		flex-basis: 246px;
+	}
+
+	&__info{
+		margin-top:9px;
+		display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+		justify-content: flex-start;
+	}
+
+	li {
+		list-style: none;
+		height: 26px;
+		flex-grow: 1;    color: #2c3a54;
+	}
+
+	h3{
+		margin-bottom: 13px;
+		font-size: 20px;
+		color:$darkGrey;
+		text-transform: uppercase;
+	}
+
+	&__foto {
+		width: 100%;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+#standart-travell,
+#galery-ajax-row{
+	display: flex;
+	flex-wrap: wrap;
+}

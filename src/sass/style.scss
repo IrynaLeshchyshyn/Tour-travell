@@ -1,0 +1,41 @@
+
+@import 'base/variables';
+@import 'base/change_bootstrap_styles';
+@import 'base/base';
+@import 'base/layout';
+@import 'base/buttons';
+@import 'base/titles';
+@import 'base/other_styles';
+
+@import 'vendor/slick';
+@import 'vendor/slick-theme';
+
+@import 'blocks/menu';
+@import 'blocks/presentation';
+@import 'blocks/tabs';
+@import 'blocks/find';
+@import 'blocks/project';
+@import 'blocks/nav-icon';
+@import 'blocks/card';
+@import 'blocks/contact';
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,500,600,700&subset=cyrillic-ext');
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../font/Gilroy-ExtraBold.otf') format('otf');
+  src: url('../font/gilroy-extrabold-webfont.woff') format('woff');
+  src: url('../font/gilroy-extrabold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url('../font/Gilroy-Light.otf') format('otf');
+  src: url('../font/gilroy-light-webfont.woff') format('woff');
+  src: url('../font/gilroy-light-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+};

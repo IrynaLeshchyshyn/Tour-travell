@@ -1,0 +1,285 @@
+.button-login{
+	width: 110px;
+	width: 100%;
+	height: 37px;
+	text-transform: uppercase;
+	color:$white;
+	line-height:37px;
+	text-align:center;
+	background:#5d9b9a;
+	border-radius:20px;
+	border:none;
+	position: relative;
+
+	&:before{
+  	width: 2px;
+  	height: 50%;
+  	position: absolute;
+  	left:5px;
+  	top:11px;
+  	background:#5d9b9a;
+    content: '';
+    transition: all  1s ease-in ;
+    z-index: 5;
+    border-radius:50px;
+  }
+
+  &:hover:before{
+  	width: 1px;
+  	height: 85%;
+  	background:#375a56;
+  	position: absolute;
+  	left:90%;
+  	top:3px;
+  	content: '';
+  }
+
+	&:after{
+  	width: 2px;
+  	height:50%;
+  	position: absolute;
+  	right:5px;
+  	top:11px;
+  	background:#5d9b9a;
+    content: '';
+    transition: all  1s ease-in;
+    z-index: 5;
+    border-radius:50px;
+  }
+	
+  &:hover:after{
+  	width: 1px;
+  	height: 85%;
+  	background:#375a56;
+  	position: absolute;
+  	right:90%;
+  	top:3px;
+  	content: '';
+  }
+}
+
+.button-main{
+	width:100%;
+	height:100%;
+	border:none;
+	border-radius:10px;
+	background:transparent;
+	text-align:center;
+	font-size:16px;
+	color:white;
+	border-radius:20px;
+
+	&--carousel{
+		background:#5d9b9a;
+		position:relative;
+	}
+
+	&--find-properties{
+		background:#5d9b9a;
+		line-height: 50px;
+	}
+
+	&--find-buyers{
+		background:#5d9b9a;
+		height:50px;
+		width:188px;
+		line-height: 50px;
+	}
+
+	&--featured{
+		background:white;
+		border:1px solid $grey;
+		color:$darkGrey;
+		line-height: 50px;
+
+		&:hover{
+			border:1px solid #375a56;
+		}
+	}
+}
+
+.button{
+	width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #5d9b9a;
+  text-align: center;
+  font-size: 16px;
+	height: 51px;
+	color:white;
+	margin: auto;
+	border-radius:20px;
+  text-transform: uppercase;
+	border: 1px solid transparent;
+
+	&:hover{
+		border:1px solid #375a56;
+	}
+}
+
+
+
+#form-button,
+#sale-button{
+	width: 60%;
+	margin: auto;
+	@media only screen and (min-width:320px) and (max-width:480px){
+		width: 100%;
+		margin: auto;
+	}
+}
+
+#more-travell,
+#sale-button,
+#load{width: 100%;
+	margin: 15px auto;
+
+	@media only screen and (min-width:480px) and (max-width:767px){
+		width: 60%;
+	}
+}
+
+#form-button,#send-button{
+	width: 100%;
+	margin: 0 auto;
+
+	@media only screen and (min-width:480px) and (max-width:992px){
+		width: 60%;
+	}
+}
+
+#form-button,
+#more-travell,
+#load,
+#sale-button,
+#send-button{
+	position:relative;
+	 -webkit-transition: width 0.2s;
+    transition-timing-function: linear;
+
+	&:before{
+  	width: 2px;
+  	height: 50%;
+  	position: absolute;
+  	left:5px;
+  	top:11px;
+  	background:#5d9b9a;
+    content: '';
+    transition: all  1s ease-in ;
+    z-index: 5;
+    border-radius:50px;
+
+  }
+  &:hover:before{
+  	width: 1px;
+  	height: 85%;
+  	background:#375a56;
+  	position: absolute;
+  	left:90%;
+  	top:3px;
+  	content: '';
+  }
+
+	&:after{
+  	width: 2px;
+  	height:50%;
+  	position: absolute;
+  	right:5px;
+  	top:11px;
+  	background:#5d9b9a;
+    content: '';
+    transition: all  1s ease-in;
+    z-index: 5;
+    border-radius:50px;
+  }
+  &:hover:after{
+  	width: 1px;
+  	height: 85%;
+  	background:#375a56;
+  	position: absolute;
+  	right:90%;
+  	top:3px;
+  	content: '';
+  }
+}
+
+.featured-button-container{
+	height:50px;
+	width:188px;
+	float: right;
+	margin-bottom: 40%;
+}
+
+@media screen and (max-width:768px){
+	.featured-button-container{
+		float: none;
+		margin:auto;
+		margin-bottom:5%;
+		margin-top:5%;
+	}
+}
+
+
+
+//animation for button-main
+
+.button-main--carousel span {
+    display: inline-block;
+}
+
+.button-main--carousel span:nth-of-type(2) {
+    animation-delay: .05s;
+}
+.button-main--carousel span:nth-of-type(3) {
+    animation-delay: .1s;
+}
+.button-main--carousel span:nth-of-type(4) {
+    animation-delay: .15s;
+}
+.button-main--carousel span:nth-of-type(5) {
+    animation-delay: .2s;
+}
+.button-main--carousel span:nth-of-type(6) {
+    animation-delay: .25s;
+}
+.button-main--carousel span:nth-of-type(7) {
+    animation-delay: .3s;
+}
+.button-main--carousel span:nth-of-type(8) {
+    animation-delay: .35s;
+}
+.button-main--carousel span:nth-of-type(9) {
+    animation-delay: .4s;
+}
+.button-main--carousel span:nth-of-type(10) {
+    animation-delay: .45s;
+}
+.button-main--carousel span:nth-of-type(11) {
+    animation-delay: .5s;
+}
+.button-main--carousel span:nth-of-type(12) {
+    animation-delay: .55s;
+}
+.button-main--carousel span:nth-of-type(13) {
+    animation-delay: .6s;
+}
+.button-main--carousel span:nth-of-type(14) {
+    animation-delay: .65s;
+}
+
+.button-main--carousel span {
+  opacity: 0;
+  transform: rotate(-180deg) translate(150px, 0);
+  animation: twister .5s forwards;
+}
+
+@keyframes twister {
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(0deg) translate(0);
+        opacity: 1;
+    }
+}
